@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0088)https://sapui5.hana.ondemand.com/1.36.6/docs/guide/f7cbafc9a76140ec8fc55b51a63cf467.html -->
+<html lang="en-us" data-highlight-query-terms="pending"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+<meta name="abstract" content="A minimalistic index.html file is needed to test the project configuration. This file contains the SAPUI5 bootstrap and a sap.m.Text control that displays the text &quot;SAPUI5 is loaded successfully!&quot;.">
+<meta name="description" content="A minimalistic index.html file is needed to test the project configuration. This file contains the SAPUI5 bootstrap and a sap.m.Text control that displays the text &quot;SAPUI5 is loaded successfully!&quot;.">
+
+<link rel="stylesheet" type="text/css" href="./Create an index.html File_files/documentation.css">
+<title>Create an index.html File</title>
+<!--[if lte IE 7]><style>
+      .codeblock{
+          overflow:visible;
+      }</style><![endif]-->
+
+  <script src="./Create an index.html File_files/jquery.js.download"></script>
+    <script src="./Create an index.html File_files/highlight-query-terms.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./Create an index.html File_files/highlight-query-terms.css">
+    <link rel="stylesheet" type="text/css" href="./Create an index.html File_files/prettify.css">
+    <script src="./Create an index.html File_files/lang-css.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./Create an index.html File_files/prettify(1).css">
+  </head>
+<body class="" id="loiof7cbafc9a76140ec8fc55b51a63cf467">
+<div id="wrapper"><div id="container">
+<h1 class="title topictitle1">Create an index.html File</h1>
+<div class="body conbody"><p class="shortdesc">A minimalistic <span class="ph filepath">index.html</span> file is needed to test the project
+		configuration. This file contains the <span class="ph"><span class="ph pname">SAPUI5</span></span> bootstrap and a
+			<samp class="ph codeph">sap.m.Text</samp> control that displays the text "<span class="ph emphasis emphasis"><span class="ph"><span class="ph pname">SAPUI5</span></span> is loaded
+			successfully!</span>".</p>
+<div class="p">
+			<ol class="ol" id="loiof7cbafc9a76140ec8fc55b51a63cf467__ol_dpd_nq3_zs"><li class="li">Choose the <span class="ph uicontrol">New Folder</span> icon in the header toolbar and enter
+						<kbd class="ph userinput">src</kbd> as the folder name.</li>
+<li class="li">Select the newly created folder and create a new <span class="ph filepath">index.html</span> file inside
+					it by choosing the <span class="ph uicontrol">New File</span> icon.</li>
+<li class="li">Paste the following code in the newly created <span class="ph filepath">index.html</span> file and
+					select <span class="ph uicontrol">Save</span>:<div class="p">
+						<div class="div_pre_codeblock"><pre class="pre codeblock prettyprint prettyprinted" style=""><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+	</span><span class="tag">&lt;head&gt;</span><span class="pln">
+		</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge"</span><span class="tag">&gt;</span><span class="pln">
+		</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+		</span><span class="tag">&lt;title&gt;</span><span class="pln">SAPUI5 Walkthrough</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+		</span><span class="tag">&lt;script</span><span class="pln">
+			</span><span class="atn">id</span><span class="pun">=</span><span class="atv">"sap-ui-bootstrap"</span><span class="pln">
+			</span><span class="atn">src</span><span class="pun">=</span><span class="atv">"/resources/sap-ui-core.js"</span><span class="pln">
+			</span><span class="atn">data-sap-ui-theme</span><span class="pun">=</span><span class="atv">"sap_bluecrystal"</span><span class="pln">
+			</span><span class="atn">data-sap-ui-modules</span><span class="pun">=</span><span class="atv">"sap.m.library"</span><span class="pln">
+			</span><span class="atn">data-sap-ui-compatVersion</span><span class="pun">=</span><span class="atv">"edge"</span><span class="pln">
+			</span><span class="atn">data-sap-ui-preload</span><span class="pun">=</span><span class="atv">"async"</span><span class="pln"> </span><span class="tag">&gt;</span><span class="pln">
+		</span><span class="tag">&lt;/script&gt;</span><span class="pln">
+		</span><span class="tag">&lt;script&gt;</span><span class="pln">
+			sap</span><span class="pun">.</span><span class="pln">ui</span><span class="pun">.</span><span class="pln">getCore</span><span class="pun">().</span><span class="pln">attachInit</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+				</span><span class="kwd">new</span><span class="pln"> sap</span><span class="pun">.</span><span class="pln">m</span><span class="pun">.</span><span class="typ">Text</span><span class="pun">({</span><span class="pln">
+					text </span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><span class="ph"><span class="ph pname"><span class="str">SAPUI5</span></span></span><span class="str"> is loaded successfully!"</span><span class="pln">
+				</span><span class="pun">}).</span><span class="pln">placeAt</span><span class="pun">(</span><span class="str">"content"</span><span class="pun">);</span><span class="pln">
+			</span><span class="pun">});</span><span class="pln">
+		</span><span class="tag">&lt;/script&gt;</span><span class="pln">
+	</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+	</span><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sapUiBody"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"content"</span><span class="tag">&gt;</span><span class="pln">
+	</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre></div>
+
+					</div>
+</li>
+</ol>
+
+		</div>
+</div>
+</div></div>
+
+<script language="JavaScript"><!--
+ var page_title="Create an index.html File";
+
+        if (page_title !='' &&
+        parent.document.title != null) {
+ parent.document.title =
+          page_title;
+ } 
+ var
+        anchor = document.getElementById(location.hash.substring(+1)); if (typeof (anchor)
+        !='undefined' && anchor !=null){
+        var top = anchor.getBoundingClientRect().top; } 
+//-->
+</script>
+
+</body></html>
